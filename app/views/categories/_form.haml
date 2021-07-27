@@ -1,0 +1,9 @@
+= simple_form_for @category do |f|
+  = f.input :title
+  %h3 Questions
+  #questions
+    = f.simple_fields_for :questions do |question|
+      = render 'question_fields', f: question
+    .links
+      = link_to_add_association 'add question', f, :questions
+  = f.submit

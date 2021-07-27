@@ -1,0 +1,21 @@
+%h1.text-center
+  = @category.title
+
+- if @category.questions.empty?
+  %p Il n'y a pas encore de questions pour cette catégorie
+
+- @category.questions.each do |question|
+  %h5 Question : #{question.title}
+  %p Réponse : #{question.body}
+
+%br/
+%br/
+
+
+= link_to 'Modifier la catégorie', edit_category_path(@category)
+|
+= link_to 'Voir toutes les catégories', categories_path
+|
+= link_to 'Supprimer cette catégorie', @category, method: :delete, data: { confirm: 'Êtes-vous sûr de supprimer cette catégorie ?' }
+
+
