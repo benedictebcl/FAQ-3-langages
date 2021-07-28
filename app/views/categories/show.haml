@@ -1,21 +1,27 @@
-%h1.text-center
-  = @category.title
+%div.margin
 
-- if @category.questions.empty?
-  %p Il n'y a pas encore de questions pour cette catégorie
+  %h1.text-center= @category.title
 
-- @category.questions.each do |question|
-  %h5 Question : #{question.title}
-  %p Réponse : #{question.body}
-
-%br/
-%br/
+  - if @category.questions.empty?
+    %p.text_center Il n'y a pas encore de questions pour cette catégorie
 
 
-= link_to 'Modifier la catégorie', edit_category_path(@category)
-|
-= link_to 'Voir toutes les catégories', categories_path
-|
-= link_to 'Supprimer cette catégorie', @category, method: :delete, data: { confirm: 'Êtes-vous sûr de supprimer cette catégorie ?' }
+  .list-group.margin
+    - @category.questions.each do |question|
+      %a.list-group-item.list-group-item-action
+        .d-flex.w-100.justify-content-between
+          %h5.mb-1 Question : #{question.title}
+        %p.mb-1 Réponse : #{question.body}
+
+  %br/
+  %br/
+
+
+  = link_to 'Modifier la catégorie', edit_category_path(@category)
+  |
+  = link_to 'Voir toutes les catégories', categories_path
+  |
+  = link_to 'Supprimer cette catégorie', @category, method: :delete, data: { confirm: 'Êtes-vous sûr de supprimer cette catégorie ?' }
+
 
 
