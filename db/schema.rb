@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_28_125557) do
+ActiveRecord::Schema.define(version: 2021_07_28_151333) do
 
   create_table "categories", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -27,9 +27,18 @@ ActiveRecord::Schema.define(version: 2021_07_28_125557) do
     t.index ["locale"], name: "index_category_translations_on_locale"
   end
 
-  create_table "questions", force: :cascade do |t|
+  create_table "question_translations", force: :cascade do |t|
+    t.integer "question_id", null: false
+    t.string "locale", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.string "title"
     t.text "body"
+    t.index ["locale"], name: "index_question_translations_on_locale"
+    t.index ["question_id"], name: "index_question_translations_on_question_id"
+  end
+
+  create_table "questions", force: :cascade do |t|
     t.integer "category_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
