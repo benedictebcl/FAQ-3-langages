@@ -1,4 +1,4 @@
-en:
+it:
   simple_form:
     "yes": 'Yes'
     "no": 'No'
@@ -9,8 +9,8 @@ en:
       default_message: "Please review the problems below:"
     labels:
       defaults:
-        title: Title
-        body: Answer
+        title: Titulo
+        body: Riposta
     buttons:
       defaults:
         save: Créer

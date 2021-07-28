@@ -1,10 +1,12 @@
 = simple_form_for @category do |f|
+  - f.label t('title')
   = f.input :title
   %br/
-  %h3 Questions
+  %h3= t '.question'
+
   #questions
     = f.simple_fields_for :questions do |question|
       = render 'question_fields', f: question
     .links
-      = link_to_add_association 'add question', f, :questions
+      = link_to_add_association t('.add'), f, :questions
   = f.submit

@@ -10,18 +10,18 @@
     - @category.questions.each do |question|
       %a.list-group-item.list-group-item-action
         .d-flex.w-100.justify-content-between
-          %h5.mb-1 Question : #{question.title}
-        %p.mb-1 Réponse : #{question.body}
+          %h5.mb-1= question.title
+        %p.mb-1= question.body
 
   %br/
   %br/
 
 
-  = link_to 'Modifier la catégorie', edit_category_path(@category)
+  = link_to t('.edit'), edit_category_path(@category)
   |
-  = link_to 'Voir toutes les catégories', categories_path
+  = link_to t('.show'), categories_path
   |
-  = link_to 'Supprimer cette catégorie', @category, method: :delete, data: { confirm: 'Êtes-vous sûr de supprimer cette catégorie ?' }
+  = link_to t('.destroy'), @category, method: :delete, data: { confirm: 'Êtes-vous sûr de supprimer cette catégorie ?' }
 
 
 

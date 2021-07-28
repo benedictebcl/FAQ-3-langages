@@ -2,3 +2,25 @@ it:
   categories:
     index:
       title: Las categorias
+      create: Crea una nuova categoria
+      show: Vedi domande
+      edit: Modifica categoria e domande
+      destroy: Elimina categoria e domande
+    show:
+      show: Vedi categorias
+      edit: Modifica categoria e domande
+      destroy: Elimina categoria e domande
+      question: "Domanda :"
+      answer: "Riposta :"
+    edit:
+      show: Vedi categoria
+      edit: Modifica categoria e domande
+      add: add kk
+      question: "Domanda :"
+    form:
+      add: Aggiungi domanda
+      question: Preguntas
+    question_fields:
+      remove: Elimina domanda
+
+

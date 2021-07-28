@@ -1,5 +1,7 @@
 .nested-fields
+
   = f.input :title
+  - f.label t('body')
   = f.input :body
-  = link_to_remove_association "remove question", f
+  = link_to_remove_association t('.remove'), f
 

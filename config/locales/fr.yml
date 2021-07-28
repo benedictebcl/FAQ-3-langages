@@ -2,3 +2,23 @@ fr:
   categories:
     index:
       title: Les catégories
+      create: Créer une nouvelle catégorie
+      show: Voir les questions
+      edit: Modifier la catégorie et les questions
+      destroy: Supprimer la catégorie et les questions
+    show:
+      show: Voir les catégories
+      edit: Modifier les catégories et les questions
+      destroy: Supprimer les catégories et les questions
+      question: "Question :"
+      answer: "Réponse :"
+    edit:
+      show: Voir la catégorie
+      edit: Modifier les catégories et les questions
+      question: "Question :"
+    form:
+      add: Ajouter question
+      question: Questions
+    question_fields:
+      remove: Supprimer question
+

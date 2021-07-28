@@ -7,15 +7,13 @@
     .col-sm-6
       .card
         .card-body
-          %h5.card-title.text-center= category.title
-          %p.text-center= link_to 'Show questions', category
-          %p.text-center= link_to 'Edit category', edit_category_path(category)
-          %p.text-center= link_to 'Destroy catgeory', category, method: :delete, data: { confirm: 'Are you sure?' }
+          %h5.card-title.text-center.mb-5= category.title
+          %p.text-center= link_to t('.show'), category
+          %p.text-center= link_to t('.edit'), edit_category_path(category)
+          %p.text-center= link_to t('.destroy'), category, method: :delete, data: { confirm: 'Are you sure?' }
 
 
 %br/
-= link_to 'Créer une nouvelle catégorie', new_category_path
 
-
-
+%p.text-center= link_to t('.create'), new_category_path
 

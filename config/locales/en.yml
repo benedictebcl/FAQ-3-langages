@@ -30,6 +30,26 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  products:
+  categories:
     index:
       title: Categories
+      create: Create a new category
+      show: Show questions
+      edit: Edit category and questions
+      destroy: Destroy category and questions
+    show:
+      show: Show categories
+      edit: Edit category and questions
+      destroy: Destroy category and questions
+    edit:
+      show: Show category
+      edit: Edit category and questions
+      # destroy: Destroy category and questions
+      question: "Question :"
+      # answer: "Answer :"
+    form:
+      add: Add question
+      question: Questions
+    question_fields:
+      remove: Delete question
+
