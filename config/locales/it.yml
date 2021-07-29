@@ -15,8 +15,9 @@ it:
     edit:
       show: Vedi categoria
       edit: Modifica categoria e domande
-      add: add kk
       question: "Domanda :"
+    new:
+      new: Crea una nuova categoria
     form:
       add: Aggiungi domanda
       question: Preguntas

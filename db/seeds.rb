@@ -14,7 +14,7 @@ I18n.locale = :en
 car = Question.create(title: "What car is it ?", body: "It is a Fiat 500", category: Category.create(title: "Car"))
 
 I18n.locale = :fr
-car = Question.update(title: "Quelle voiture est-ce ?", body: "C'est une Fiat 500", category: Category.create(title: "Voiture"))
+car = Question.create(title: "Quelle voiture est-ce ?", body: "C'est une Fiat 500", category: Category.create(title: "Voiture"))
 
 I18n.locale = :it
-car = Question.update(title: "Che macchina è ?", body: "È una Fiat 500", category: Category.create(title: "Auto"))
+car = Question.create(title: "Che macchina è ?", body: "È una Fiat 500", category: Category.create(title: "Auto"))

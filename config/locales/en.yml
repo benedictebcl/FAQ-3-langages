@@ -44,9 +44,9 @@ en:
     edit:
       show: Show category
       edit: Edit category and questions
-      # destroy: Destroy category and questions
       question: "Question :"
-      # answer: "Answer :"
+    new:
+      new: Create a new category
     form:
       add: Add question
       question: Questions

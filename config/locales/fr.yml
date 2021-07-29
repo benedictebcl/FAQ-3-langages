@@ -16,6 +16,8 @@ fr:
       show: Voir la catégorie
       edit: Modifier les catégories et les questions
       question: "Question :"
+    new:
+      new: Créer une nouvelle catégorie
     form:
       add: Ajouter question
       question: Questions
